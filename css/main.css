@@ -1,0 +1,191 @@
+Skip to content
+This repository  
+Pull requests
+Issues
+Gist
+ @maryburford
+ Unwatch 67
+  Star 0
+ Fork 0paperlesspost/stuff4u PRIVATE
+ branch: gh-pages  stuff4u/css/main.css
+Mary Burford on May 15 fixing broken stuff
+1 contributor
+RawBlameHistory     204 lines (176 sloc)  3.069 kB
+@font-face {
+  font-family: AlwaysHeart;
+  src: url(../fonts/always_in_my_heart.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  color: #111;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  /*font-weight: lighter;*/
+  width: 100%;
+}
+
+marquee {
+  position: absolute;
+}
+
+.background {
+  background-image: url(../img/shirt_500x500.png);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  position: absolute;
+  opacity: .15;
+  width: 100%;
+  z-index: -1;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+.select-grid {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.selection {
+  width: 120px;
+  height: 120px;
+  float: left;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.inner-content {
+  border: none;
+  border-radius: none;
+  width:  none;
+  height:  none;
+  width:  none;
+  height:  none;
+  position:  none;
+  left:  none;
+  top:  none;
+  margin-left:  none;
+  margin-top:  none;
+}
+
+.selection.selected .inner-content{ 
+  border: 2px solid #111;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 100%;
+  top: 100%; 
+  margin-left: -120px;
+  margin-top: -120px;
+  color: #B4C989;
+}
+
+
+.submit-btn {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid #111;
+  background-color: white;
+  margin-top: 20px;
+  padding: 5px 20px;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.request-input {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.request-form {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.submit-btn:hover {
+  border: 1px solid transparent;
+  background-color: #111;
+  color: #fff;
+}
+
+.cf {
+  clear: both;
+  float: none;
+}
+
+
+.header {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 0;
+  position: relative;
+}
+
+.none {
+  display: none;
+}
+
+.error-holder {
+  padding: 10px 20px;
+  background-color: #DEEDC0;
+  border: 2px solid #B4C989;
+  border-radius: 5px;
+  width: 400px;
+  margin: 15px auto;
+  text-align: center;
+  z-index: 400;
+  position: relative;
+}
+
+.notes-field {
+  resize: none;
+  margin-top: 20px;
+  width: 235px;
+  padding: 5px;
+  font-size: 14px;
+  height: 75px;
+}
+
+
+.img-text {
+	display: none;
+	position: absolute;
+}
+
+.selection:hover .img-text {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+    color: #B4C989;
+	-webkit-transform: rotate(328deg);
+	-moz-transform: rotate(328deg);
+	-o-transform: rotate(328deg);
+	writing-mode: lr-tb;
+}
+
+.hover-text {
+	margin: auto;
+	height: auto;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	position: absolute;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
